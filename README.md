@@ -23,6 +23,7 @@ Compatibility
 
 | Nexus Version      | Plugin Version |
 | ------------------ | -------------- |
+| 3.x and greater    | Not compatible (see https://github.com/sonatype-nexus-community/nexus-repository-apt) |
 | 2.11.x and greater | 1.1.2          |
 | 2.8.x and greater  | 1.0.2          |
 | 2.7.x              | 0.6            |
