@@ -29,7 +29,7 @@ public class DebianFileManager {
     @Inject
     public DebianFileManager(AptSigningConfiguration aptSigningConfiguration) {
         this.cache = CacheBuilder.newBuilder()
-                .expireAfterWrite(5, TimeUnit.SECONDS)
+                .expireAfterWrite(Integer.parseInt(System.getProperty("DebianFileManager.cacheTimeoutSeconds", "5")), TimeUnit.SECONDS)
                 .build();
 
         this.generators = new HashMap<String, FileGenerator>();
